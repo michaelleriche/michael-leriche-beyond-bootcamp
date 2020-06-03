@@ -1,0 +1,98 @@
+@import 'setup';
+@import 'variables';
+@import 'fonts';
+
+body {
+    background-color: $bodyColor;
+    color: $fontColor;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    margin: 10px;
+    padding: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn {
+    outline: none;
+}
+.btn:hover {
+    background: black;
+    color: white;
+}
+button,
+.submit {
+    padding: 25px 50px;
+    background-color: white;
+    border: 2px solid black;
+}
+.start-btn, 
+.next-btn {
+    padding: 10px 20px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+}
+.bottom-button {
+    margin-top: 30px;
+}
+@media (max-width: 740px) {
+    h1 {
+        width: 70%;
+        line-height: 50px;
+    }
+    h2 {
+        width: 70%;
+    }
+    a,
+    button {
+        font-size: 15px;
+        margin: 20px;
+    }
+    button {
+        padding: 20px 30px;
+    }
+}
+@media (max-width: 550px) {
+    .container {
+        margin-top: 140px;
+    }
+}
+@media (max-width: 400px) {
+    h1 {
+        margin-top:150px ;
+    }
+    .container {
+        margin-top: 260px;
+    }
+}
